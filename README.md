@@ -40,19 +40,6 @@ A solução consiste na criação de APIs REST capazes de realizar operações d
 * Swagger/OpenAPI
 * JavaScript
 
-## Arquitetura
-
-O projeto foi estruturado seguindo a separação de responsabilidades entre Controllers, Services e Integrações externas, facilitando a manutenção, escalabilidade e evolução da solução.
-
-## Melhorias Futuras
-
-* Implementação de autenticação JWT.
-* Logs centralizados.
-* Testes automatizados.
-* Containerização com Docker.
-* Monitoramento e observabilidade.
-* Integração contínua (CI/CD).
-
 ## Autores
 
 Desenvolvido por:
