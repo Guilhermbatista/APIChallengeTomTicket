@@ -5,49 +5,69 @@ Integração com a API do TomTicket utilizando Node.js e Express, oferecendo ope
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido como parte de um desafio técnico proposto pela **PSATECH**, com o objetivo de demonstrar conhecimentos em desenvolvimento de APIs, integração entre sistemas e aplicação de boas práticas de engenharia de software para otimização de processos empresariais através da tecnologia.
+Este projeto foi desenvolvido como parte de um desafio técnico proposto pela **PSATECH**, com o objetivo de demonstrar habilidades em desenvolvimento de APIs, integração entre sistemas e aplicação de tecnologia para otimização de processos corporativos.
 
-A solução consiste na criação de APIs REST capazes de realizar operações de gerenciamento de clientes e chamados por meio da integração com a plataforma TomTicket, proporcionando maior automação, centralização e eficiência no fluxo de atendimento.
+A solução implementa uma API REST em **Node.js**, responsável por integrar sistemas externos à plataforma **TomTicket**, permitindo operações de criação e consulta de clientes e chamados de forma centralizada, segura e escalável.
 
-## Objetivos
+## Objetivo
 
-* Automatizar processos de cadastro e consulta de clientes.
-* Permitir a criação e acompanhamento de chamados de forma integrada.
-* Aplicar conceitos de arquitetura em camadas e boas práticas de desenvolvimento.
-* Demonstrar capacidade de integração com APIs de terceiros.
-* Promover oportunidades de evolução e melhoria contínua dos processos internos por meio da tecnologia.
+Desenvolver uma camada de integração capaz de automatizar processos de atendimento, reduzindo atividades manuais e facilitando a comunicação entre aplicações e o sistema de gestão de tickets.
 
 ## Funcionalidades
 
 ### Clientes
 
-* Cadastro de clientes.
-* Consulta de clientes.
-* Consulta de cliente por identificador.
+* Cadastro de clientes
+* Consulta de clientes
+* Consulta de cliente por identificador
 
 ### Chamados
 
-* Criação de chamados.
-* Consulta de chamados.
-* Consulta de chamados por protocolo.
+* Criação de chamados
+* Consulta de chamados
+* Consulta de chamado por protocolo
 
-## Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
 * Node.js
 * Express.js
+* Axios
 * REST API
-* Axios (Integração com API externa)
 * Swagger/OpenAPI
 * JavaScript
 
-## Autores
+## 📂 Estrutura do Projeto
 
-Desenvolvido por:
+```text
+src/
+├── controllers/
+├── services/
+├── routes/
+├── middlewares/
+├── config/
+└── app.js
+```
 
-* Vinicius Lacava
-* Guilherme Batista
+## 🔗 Integração
+
+A aplicação consome a API oficial do TomTicket para realizar operações de gerenciamento de clientes e chamados, utilizando autenticação por token e comunicação via HTTP REST.
+
+## 💡 Diferenciais Implementados
+
+* Arquitetura organizada em camadas
+* Separação de responsabilidades
+* Tratamento de erros
+* Padronização de respostas da API
+* Código preparado para futuras evoluções e escalabilidade
+
+## 👨‍💻 Autores
+
+**Vinicius Lacava**
+
+**Guilherme Batista**
 
 ---
 
-**PSATECH - Tecnologia aplicada à evolução e otimização de processos.**
+### PSATECH
 
+Este projeto foi desenvolvido com foco na aplicação da tecnologia como ferramenta para melhoria contínua, automação de processos e geração de valor para o negócio, alinhando qualidade técnica, escalabilidade e eficiência operacional.
