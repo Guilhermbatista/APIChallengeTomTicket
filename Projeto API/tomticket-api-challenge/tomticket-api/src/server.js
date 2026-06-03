@@ -18,6 +18,9 @@ const { errorHandler } = require('./middleware/errorHandler');
 const app  = express();
 const PORT = process.env.PORT || 3000;
 
+// ─── Trust proxy (necessário para Railway, Azure, Render e outros clouds) ─────
+app.set('trust proxy', 1);
+
 // ─── Middlewares Globais ───────────────────────────────────────────────────
 app.use(cors());
 app.use(express.json());
@@ -26,8 +29,8 @@ app.use(morgan('dev'));
 
 // Rate limit local: respeita o limite de 3 req/s da API TomTicket
 const limiter = rateLimit({
-  windowMs: 1000,           // janela de 1 segundo
-  max: 3,                   // máximo de 3 requisições por janela
+  windowMs: 1000,
+  max: 3,
   standardHeaders: true,
   legacyHeaders: false,
   message: {
