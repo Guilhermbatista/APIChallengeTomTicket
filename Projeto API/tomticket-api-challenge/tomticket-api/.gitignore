@@ -1,0 +1,22 @@
+# ─── SEGREDO — NUNCA SUBIR PARA O GITHUB ─────────────────────────────────────
+.env
+.env.local
+.env.production
+.env.*
+!.env.example
+
+# ─── Dependências (pesadas, geradas pelo npm install) ─────────────────────────
+node_modules/
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+logs/
+
+# ─── Sistema operacional ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Editores ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
